@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    @foreach ($peliculas as $pelicula)   
+    @foreach ($movies as $pelicula)   
     <div class="post">
         <article>
             <div class="thumb">

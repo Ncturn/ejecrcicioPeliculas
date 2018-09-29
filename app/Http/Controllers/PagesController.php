@@ -1,15 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Pelicula;
+use App\Movie;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
     public function home(){
-        $peliculas = Pelicula::all();
+        $movies = Movie::all();
         return view('welcome',[
-            'peliculas' => $peliculas
+            'movies' => $movies
         ]);
     }
 }

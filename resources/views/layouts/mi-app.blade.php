@@ -12,7 +12,7 @@
 	<header>
 		<div class="contenedor">
 			<div class="logo izquierda">
-				<p><a href="index.php">Peliculas Latino</a></p>
+				<p><a href="index.php">Movies Latino</a></p>
 			</div>
 			<div class="derecha">
 				<form name="busqueda" class="buscar" action="#" method="GET" >
