@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function home(){
-        $movies = Movie::all();
+        $movies = Movie::paginate(8);
         return view('welcome',[
             'movies' => $movies
         ]);
