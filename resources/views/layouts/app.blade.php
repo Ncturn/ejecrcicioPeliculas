@@ -104,7 +104,7 @@
         </main>
     </div>
 
-    <footer class="bg-red text-center font-white fixed-bottom">
+    <footer class="bg-red text-center font-white">
         <p>Copyright 2015 - 2016 Manuel Morales</p>
     </footer>
 </body>

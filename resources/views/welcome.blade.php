@@ -2,14 +2,14 @@
 @section('content')
 <div class="container">
     <article class="row">
-    @foreach ($movies as $pelicula)   
+    @foreach ($movies as $movie)   
     
         
             <div class="col-12 align-self-center col-lg-3">
-            <h3>{{$pelicula->titulo}}</h3>
-                <p class="fecha">{{$pelicula->fecha}}<p>
-                <a href="">
-                    <img class="desvanecer" src="{{$pelicula->poster}}" alt="">
+            <h3>{{$movie->titulo}}</h3>
+                <p class="fecha">{{$movie->fecha}}<p>
+                <a href="/movies/{{$movie->id}}">
+                    <img class="desvanecer" src="{{$movie->poster}}" alt="">
                 </a>
             </div>
         

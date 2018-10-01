@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PagesController@home');
+Route::get('/movies/{movie}', 'MoviesController@show');
 
 Auth::routes();
 
