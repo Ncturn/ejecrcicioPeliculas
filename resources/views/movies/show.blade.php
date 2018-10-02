@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-    @section('content')
+@section('content')
     <div class="container">
         <div class="row">
             <h1 class="col-12">Titulo: {{$movie->titulo}}</h1>
@@ -9,8 +9,8 @@
             <p class="col-6">Sinopsis:<br/> {{$movie->sinopsis}} <br/><br/>
                 Reseña:<br/> {{$movie->resena}}
             </p>
-    
+
         </div>
     </div>   
-    @endsection
+@endsection
   
