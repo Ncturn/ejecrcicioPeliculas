@@ -93,6 +93,9 @@
                                     </form>
                                 </div>
                             </li>
+                            <li class="nav-item">
+                                <a href="/movies/form" class="nav-link font-white">Reseñar pelicula</a>
+                            </li>
                         @endguest
                     </ul>
                 </div>

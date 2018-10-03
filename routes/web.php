@@ -12,12 +12,9 @@
 */
 
 Route::get('/', 'PagesController@home');
+Route::get('/movies/form/', 'MoviesController@form');
 Route::get('/movies/{movie}', 'MoviesController@show');
-
+Route::post('/comments/create', 'CommentsController@create');
+Route::post('/movies/create', 'MoviesController@create');
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');

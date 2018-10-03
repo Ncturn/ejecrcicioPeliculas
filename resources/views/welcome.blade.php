@@ -6,10 +6,10 @@
     
         
             <div class="col-12 align-self-center col-lg-3 mb-4">
-            <h3>{{$movie->titulo}}</h3>
-                <p class="fecha">{{$movie->fecha}}<p>
+            <h3>{{$movie->title}}</h3>
+                <p class="fecha">{{$movie->date}}<p>
                 <a href="/movies/{{$movie->id}}">
-                    <img class="desvanecer" src="{{$movie->poster}}" alt="">
+                    <img class="img-thumbnail" src="{{$movie->poster}}" alt="">
                 </a>
             </div>
         
