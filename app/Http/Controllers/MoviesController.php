@@ -17,6 +17,14 @@ class MoviesController extends Controller
 
     }
 
+    public function patch(Movie $movie)
+    {
+        return view('movies.patch', [
+            'movie' => $movie,
+        ]);
+
+    }
+
     public function form()
     {
         return view('movies.form');

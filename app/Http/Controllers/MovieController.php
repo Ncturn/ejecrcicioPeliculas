@@ -16,7 +16,7 @@ class MovieController extends Controller
      */
     public function index()
     {
-        $movies = Movie::all();
+        $movies = Movie::latest('date')->paginate(8);
         return response()->json($movies, 200);
     }
 

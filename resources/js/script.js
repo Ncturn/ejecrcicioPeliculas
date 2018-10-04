@@ -1,32 +1,28 @@
 //Ruta apuntar imagenes imagenes
-var rutaImagenes ="http://localhost/IA/imagenes/";
+var rutaImagenes ="http://localhost:8000/api/v1/movies";
 
 //funcion para solicitar las peliculas ordenadas a la API
-function getPeliculas(){
+function getMovies(){
+    var resultado = document.getElementById('api');
+        resultado.innerHTML='buenos dias';
+    // fetch('http://localhost:8000/api/v1/movies')
+    // .then(datos=>datos.json())
+    // .then(datos=>{
+    //     var resultado = document.getElementById('api');
+    //     resultado.innerHTML='buenos dias';
+    //     for(let dato of datos){
+    //         resultado.innerHTML+=`
 
-    fetch('http://localhost/apirest/Public/api/peliculas/orden')
-    .then(datos=>datos.json())
-    .then(datos=>{
-        var resultado = document.getElementById('contenedor');
-        resultado.innerHTML='';
-        for(let dato of datos){
-            resultado.innerHTML+=`
-                <div class="post">
-                    <article>
-                        <div class="thumb">
-                        <div class="info">
-                            <h3>${dato.titulo}</h3>
-                            <p class="fecha">${dato.fecha}<p>
-                        </div>
-                            <a href="single.php?id=${dato.id}">
-                                <img class="desvanecer" src="${rutaImagenes}${dato.poster}" alt="">
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            `;
-        }
-    })
+    //             <div class="col-12 align-self-center col-lg-3 mb-4">
+    //                 <h3>${dato.title}</h3>
+    //                 <p class="fecha">${dato.date}<p>
+    //                 <a href="/movies/${dato.id}">
+    //                     <img class="img-thumbnail" src="${dato.poster}" alt="">
+    //                 </a>
+    //             </div>
+    //         `;
+    //     }
+    // })
 }
 
 //Funcion para obtener peliculas del menu de administrador

@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <form action="/movies/create" class="col-10 m-auto" method="POST" enctype="multipart/form-data">
+            <form action="/movies/create" class="col-10 m-auto" method="POST" enctype="multipart/form-data" id="form_movie_post">
                 @csrf
                 <div class="form-group">
                     <input type="text" class="form-control" name="title" placeholder="Ingresa Titulo">

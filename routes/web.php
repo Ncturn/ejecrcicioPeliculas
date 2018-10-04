@@ -13,6 +13,7 @@
 
 Route::get('/', 'PagesController@home');
 Route::get('/movies/form/', 'MoviesController@form');
+Route::get('/movies/form/edit/{movie}', 'MoviesController@patch');
 Route::get('/movies/{movie}', 'MoviesController@show');
 Route::post('/comments/create', 'CommentsController@create');
 Route::post('/movies/create', 'MoviesController@create');

@@ -21,3 +21,11 @@ Route::group(['prefix' => 'v1'], function()
     ]);
 
 });
+
+Route::group(['prefix' => 'v1'], function()
+{
+    Route::resource('comments', 'CommentController', [
+        'except' => ['edit', 'create', 'index']
+    ]);
+
+});
